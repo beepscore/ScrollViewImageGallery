@@ -9,16 +9,17 @@
 //
 #import <UIKit/UIKit.h>
 
-@class ScrollViewImageGalleryViewController;
+//@class ScrollViewImageGalleryViewController;
 
 @interface ScrollViewImageGalleryAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    ScrollViewImageGalleryViewController *viewController;
-
+//    ScrollViewImageGalleryViewController *viewController;
+    UITabBarController *tabBarController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet ScrollViewImageGalleryViewController *viewController;
+// @property (nonatomic, retain) IBOutlet ScrollViewImageGalleryViewController *viewController;
+@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 
 @end
 

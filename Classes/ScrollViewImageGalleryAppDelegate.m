@@ -9,24 +9,27 @@
 //
 
 #import "ScrollViewImageGalleryAppDelegate.h"
-#import "ScrollViewImageGalleryViewController.h"
+//#import "ScrollViewImageGalleryViewController.h"
 
 @implementation ScrollViewImageGalleryAppDelegate
 
 @synthesize window;
-@synthesize viewController;
+// @synthesize viewController;
+@synthesize tabBarController;
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
     
     // Override point for customization after app launch    
-    [window addSubview:viewController.view];
+//    [window addSubview:viewController.view];
+    [window addSubview:tabBarController.view];
     [window makeKeyAndVisible];
 }
 
 
 - (void)dealloc {
-    [viewController release];
+//    [viewController release];
+    [tabBarController release];
     [window release];
     [super dealloc];
 }
